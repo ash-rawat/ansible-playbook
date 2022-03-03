@@ -17,13 +17,13 @@
    - name: copy a wallpaper
      copy:
         src: files/wallpaper.jpg
-        dest: /user/share/background/wallpaper.jpg
+        dest: /user/share/backgrounds/wallpaper.jpg
         owner: root
         group: root
 
    - name: set wallpaper
      dconf:
-        key: "/org/gnome/desktop/backgrounds/picture-uri"
+        key: "/org/gnome/desktop/background/picture-uri"
         value: "'file:///usr/share/backgrounds/wallpaper.jpg'"
 
    - name: set wallpapaer 
