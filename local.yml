@@ -1,7 +1,7 @@
 
 ---
 
-- host: localhost
+- hosts: localhost
   connection: local
   become: true
 
