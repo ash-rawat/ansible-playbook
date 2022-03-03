@@ -1,0 +1,12 @@
+
+---
+
+- host: localhost
+  connection: local
+  become: true
+
+  tasks:
+   - name: install packages
+     package:
+       name: openssh-server
+
