@@ -8,5 +8,25 @@
   tasks:
    - name: install packages
      package:
-       name: htop 
+       name: 
+        - dconf-editor
+        - tmux
+        - openssh-server
+        - xrdp
+   
+   - name: copy a wallpaper
+     copy:
+        src: files/wallpaper.png
+        dest: /user/share/background/wallpaper.png
+        owner: root
+        group: root
 
+   - name: set wallpaper
+     dconf:
+        key: "/org/gnome/desktop/background/picture-uri"
+        value: "'file:///usr/share/backgrounds/wallpaper.png'"
+
+   - name: set wallpapaer 
+     dconf:
+        key: "/org/gnome/desktop/background/picture-options"
+        value: "'zoom'"
