@@ -13,6 +13,7 @@
         - tmux
         - openssh-server
         - xrdp
+        - python3-psutil
    
    - name: copy a wallpaper
      copy:
