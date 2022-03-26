@@ -23,13 +23,13 @@
         group: root
 
    - name: set wallpaper
-     become_user: ashu
+     become_user: admin1
      dconf:
         key: "/org/gnome/desktop/background/picture-uri"
         value: "'file:///usr/share/backgrounds/wallpaper.jpg'"
 
    - name: set wallpapaer position 
-     become_user: ashu
+     become_user: admin1
      dconf:
         key: "/org/gnome/desktop/background/picture-options"
         value: "'zoom'"
