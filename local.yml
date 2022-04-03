@@ -25,23 +25,23 @@
         group: root
 
    - name: set wallpaper
-     become_user: "{{user}}"
+     become_user: ashu
      dconf:
         key: "/org/gnome/desktop/background/picture-uri"
         value: "'file:///usr/share/backgrounds/wallpaper.jpg'"
 
    - name: set wallpapaer position 
-     become_user: {{user}}
+     become_user: ashu
      dconf:
         key: "/org/gnome/desktop/background/picture-options"
         value: "'zoom'"
    - name: disable remote encryption
-     become_user: {{user}}
+     become_user: ashu
      dconf:
         key: "/org/gnome/desktop/remote-access/require-encryption"
         value: False
    - name: setting vnc password
-     become_user: {{user}}
+     become_user: ashu
      dconf:
         key: "/org/gnome/desktop/remote-access/vnc-password"
         value: "1234"
