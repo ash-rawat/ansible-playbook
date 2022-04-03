@@ -39,7 +39,7 @@
     become_user: {{user}}
     dconf:
         key: "/org/gnome/desktop/remote-access/require-encryption"
-        value: False
+        value: "False"
   - name: setting vnc password
     become_user: {{user}}
     dconf:
