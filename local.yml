@@ -4,10 +4,8 @@
 - hosts: localhost
   connection: local
   become: true
-  vars: 
-   user: ashu
 
-  tasks:
+- tasks:
    - name: install packages
      package:
        name: 
