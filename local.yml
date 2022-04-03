@@ -35,12 +35,12 @@
      dconf:
         key: "/org/gnome/desktop/background/picture-options"
         value: "'zoom'"
-  - name: disable remote encryption
+   - name: disable remote encryption
     become_user: {{user}}
     dconf:
         key: "/org/gnome/desktop/remote-access/require-encryption"
-        value: "False"
-  - name: setting vnc password
+        value: False
+   - name: setting vnc password
     become_user: {{user}}
     dconf:
         key: "/org/gnome/desktop/remote-access/vnc-password"
